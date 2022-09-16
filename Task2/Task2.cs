@@ -44,7 +44,7 @@ namespace Task2
             var lengthOfLine = n.ToString().Length + Math.Pow(n, 2).ToString().Length + 1;
             for (int i = 1; i <= n; i++)
             {
-                s += i.ToString() + Math.Pow(i, 2).ToString().PadLeft(lengthOfLine - i.ToString().Length);
+                s += i + Math.Pow(i, 2).ToString().PadLeft(lengthOfLine - i.ToString().Length);
                 if (i != n)
                 {
                     s += '\n';
